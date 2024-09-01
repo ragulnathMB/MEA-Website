@@ -1,0 +1,133 @@
+/* General container styles */
+.container {
+    padding-top: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inria Sans", sans-serif;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #6c1805, #04326e); /* Light to dark blue gradient */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+
+/* Subcontainer for each event section */
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* Header styles for section titles */
+.head1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Container for event information */
+.infoContainer {
+    height: 300px;
+    width: 70vw;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Event card styles */
+.eventCard {
+    cursor: pointer;
+    background: rgba(141, 140, 140, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventCard:hover {
+    transform: scale(1.05);
+}
+
+/* Image styles inside event card */
+.eventImage {
+    width: 100%;
+    max-width: 200px; /* Adjust size as needed */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  margin: 0 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .modalContent {
+    width: 90%;
+  }
+
+  .navButton {
+    font-size: 1.5rem;
+  }
+
+  .closeButton {
+    font-size: 1.5rem;
+  }
+}

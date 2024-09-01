@@ -1,0 +1,56 @@
+.loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right, #6c1805, #04326e); /* Light to dark blue gradient */
+    background-size: cover;
+    background-position: center;
+    z-index: 3000; /* Ensure it’s above other content */
+  }
+  
+  .gearContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px; /* Space between gears */
+  }
+  
+  .gear {
+    font-size: 5rem; /* Adjust size as needed */
+    color: white;
+    animation: rotate 2s linear infinite; /* Rotate animation */
+  }
+  
+  .gear.small {
+    font-size: 3rem; /* Smaller gear */
+    animation: rotateSmall 2s linear infinite; /* Rotate animation for small gear */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotateSmall {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg); /* Rotate in the opposite direction for variety */
+    }
+  }
+  

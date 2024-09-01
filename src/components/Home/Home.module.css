@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.mainContainer {
+    background-image: url('/ai-generated-a-fusion-of-mechanical-gears-and-digital-circuitry-symbolizing-the-convergence-of-technology-and-engineering-free-photo.jpeg'); /* Path is relative to the public directory */
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headContainer {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.mainText {
+    font-size: 4vw;
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.subText {
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 3vw;
+}
+
+.underlineAnimation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.underlineAnimation::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: white;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.underlineAnimation:hover::after {
+    width: 100%;
+}
+
+.homeDetails {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middleDetails {
+    background: rgba(141, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: 30vw;
+    height: 30vw;
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.heading1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.info1 {
+    font-size: 18px;
+}
+
+.heading2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.info2 {
+    font-size: 15px;
+}
+
+.sideDetails {
+    background: rgba(141, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: 20vw;
+    height: 20vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Inria Sans", sans-serif;
+}
+
+/* Counting animation section styles */
+.countingSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    width: 80vw;
+    color: white;
+    text-align: center;
+    background: rgba(141, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 20px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.counter {
+    font-size: 1em;
+}
+
+.num {
+    font-size: 2em;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 1300px) {
+    .homeDetails {
+        flex-direction: column;
+    }
+
+    .sideDetails {
+        height: fit-content;
+        width: 80vw;
+    }
+
+    .middleDetails {
+        height: fit-content;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .countingSection {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 570px) {
+    .mainText {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+.atext {
+    color: white;
+    font-size: 1em;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.atextCon {
+    margin-right: 5px;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    background: rgba(141, 140, 140, 0.556);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 20px;
+    font-family: "Inria Sans", sans-serif;
+    margin: 50px 0;
+    width: 90%; /* Use percentage for responsive width */
+    max-width: 1000px; /* Optional: to limit the max width */
+    overflow: hidden; /* Hide overflow to prevent content from flowing out */
+}
+
+.announcementSide {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.announcementIcon {
+    font-size: 2em;
+    margin-left: 10px;
+    color: white;
+}
+
+.announcementText {
+    overflow: hidden; /* Hide overflow to create a scrolling effect */
+    width: 100%; /* Take full width */
+    position: relative; /* Positioning context for the slider */
+}
+
+.newsSlider {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite; /* Smoother scrolling */
+    color: white;
+    font-size: 1em;
+    padding-left: 100%; /* Start off the screen to the right */
+    will-change: transform; /* Optimize scrolling performance */
+}
+
+.newsSlider p {
+    display: inline-block;
+    margin-right: 2rem; /* Spacing between news items */
+    font-size: 1em;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start from the current position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left by 100% */
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1300px) {
+    .announcement {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .announcementText {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .announcement {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .announcementText {
+        width: 100%;
+    }
+
+    .newsSlider p {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.contact {
+    padding: 2rem;
+    background-image: url('super-big-machine-technology-background-ai-photo[1].jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    font-family: "Inria Sans", sans-serif;
+    color:white;
+    font-size: 20px;
+    width: 100vw;
+    height: auto;
+    
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .heading span {
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  
+  .horizontal-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: white;
+    margin-left: 1rem;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgba(141, 140, 140, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 40%;
+    padding: 1rem;
+  }
+  
+  .form-fields {
+    flex: 2;
+    max-width: 55%;
+    padding: 1rem;
+  }
+  
+  .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .input-box input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.7rem;
+    background: #d8d1d1;
+    margin: 0.4rem 0;
+    border: 1px solid #474747;
+    border-radius: 10px;
+  }
+  
+  .input-box input {
+    width: 48%;
+  }
+  
+  .input-box .contac {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #474747;
+    background: #cac1c1;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.7rem;
+    color: #fff;
+    background-color: #0a60eb;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .content,
+    .form-fields {
+      max-width: 100%;
+    }
+  
+    .input-box input {
+      width: 100%;
+    }
+  }
+  

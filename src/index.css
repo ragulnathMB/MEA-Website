@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Ensure content flows vertically */
+  min-height: 100vh; /* Ensure the body covers the viewport height */
+}
+
+/* Optional: Ensure the root element covers the full width */
+#root {
+  width: 100%;
+  height: 100%;
+}

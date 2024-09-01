@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.ourTeam {
+    padding-top: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inria Sans", sans-serif;
+    align-items: center;
+    background-image: url('/vertical-shot-grey-metallic-gears-car-parts.jpg'); /* Path is relative to the public directory */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    padding-bottom: 100px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.head {
+    transform: rotate(-90deg);
+    font-size: 2.5em;
+    background: rgba(141, 140, 140, 0.556);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.head2 {
+    transform: rotate(90deg);
+    font-size: 2.5em;
+    background: rgba(141, 140, 140, 0.556);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.body {
+    background: rgba(141, 140, 140, 0.556);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    height: 300px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profileContainer {
+    position: relative;
+}
+
+.profile {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 20px;
+    transition: filter 0.3s ease;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15vw;
+    height: 15vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width: 800px) {
+    .body {
+        flex-direction: column;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .head {
+        transform: rotate(0deg);
+        margin: 20px;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .head2 {
+        transform: rotate(0deg);
+        margin: 20px;
+    }
+}
