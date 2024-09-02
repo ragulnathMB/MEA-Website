@@ -7,7 +7,7 @@
     flex-direction: column;
     font-family: "Inria Sans", sans-serif;
     align-items: center;
-    background-image: url('/vertical-shot-grey-metallic-gears-car-parts.jpg'); /* Path is relative to the public directory */
+    background-image: url('/vertical-shot-grey-metallic-gears-car-parts.jpg');
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -48,7 +48,7 @@
 }
 
 .body {
-    background: rgba(141, 140, 140, 0.556);
+    background: rgba(141, 140, 140, 0.712);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
@@ -72,7 +72,7 @@
 }
 
 .blur {
-    filter: blur(5px);
+    filter: blur(3px);
 }
 
 .info {
@@ -87,7 +87,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
+    font-weight: 900;
     padding: 10px;
     border-radius: 10px;
     border: none;

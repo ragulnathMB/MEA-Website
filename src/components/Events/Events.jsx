@@ -4,12 +4,19 @@ import styles from './Events.module.css'; // Import the CSS module
 const events = [
   {
     id: 1,
-    title: 'MEA Seminar 2024',
+    title: 'One-Day Symposium',
     date: 'September 15, 2024',
     images: [
-      '/67SRQt.jpg',
-      '/ai-generated-a-fusion-of-mechanical-gears-and-digital-circuitry-symbolizing-the-convergence-of-technology-and-engineering-free-photo.jpeg',
-      '/67SRQt.jpg'
+      '/symposium-event/image1.jpg',
+      '/symposium-event/image2.jpg',
+      '/symposium-event/image3.jpg',
+      '/symposium-event/image4.jpg',
+      '/symposium-event/image5.jpg',
+      '/symposium-event/image6.jpg',
+      '/symposium-event/image7.jpg',
+      '/symposium-event/image8.jpg',
+      '/symposium-event/image9.jpg',
+      '/symposium-event/image10.jpg',
     ]
   },
   {

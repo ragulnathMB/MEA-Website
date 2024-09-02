@@ -3,13 +3,19 @@ import styles from './OurTeam.module.css'; // Import CSS Module
 
 const OurTeam = () => {
   // Array containing the data for each person
-  const teamMembers = [
-    { name: 'John Doe', designation: 'President', imgSrc: './business-man-profile-vector.jpg' },
-    { name: 'Jane Smith', designation: 'Vice President', imgSrc: './business-man-profile-vector.jpg' },
-    { name: 'Emily Johnson', designation: 'Treasurer', imgSrc: './business-man-profile-vector.jpg' },
-    { name: 'Michael Brown', designation: 'Secretary', imgSrc: './business-man-profile-vector.jpg' },
-    { name: 'Sophia White', designation: 'Advisor', imgSrc: './business-man-profile-vector.jpg' },
-    { name: 'James Davis', designation: 'Web Developer', imgSrc: './business-man-profile-vector.jpg' }
+  const StudentCouncil = [
+    { name: 'Ganta Venketa Satya Sai Sireesha', designation: 'President', imgSrc: './gvsssPresident.jpg' },
+    { name: 'A Priya Deepiga', designation: 'Vice President', imgSrc: './apdVp.jpg' },
+    { name: 'Dunna Yashwanth Kumar', designation: 'Joint Secretary', imgSrc: './dykJs.jpg' },
+  ];
+  const teamMembers2 = [
+    { name: ' Dr. Jack.J.Kenned', designation: 'Assistant Professor', imgSrc: './jackkenned.png' },
+    { name: 'Dr. Vadivukkarasan M', designation: 'Assistant Professor', imgSrc: './Vadivukkarasan.jpg' },
+  ];
+  const WebTeam = [
+    { name: 'Adhish JS', designation: 'Web Developer', imgSrc: './ajsWd.jpg' },
+    { name: 'Bhuvanesh', designation: 'Web Designer', imgSrc: './bWd.jpg' },
+    { name: 'Karthigeyan S', designation: 'Web Designer', imgSrc: './kWd.jpg' },
   ];
 
   const [hoveredMember, setHoveredMember] = useState(null);
@@ -23,7 +29,7 @@ const OurTeam = () => {
       <div className={styles.container}>
         <div className={styles.head}><p>Student Council</p></div>
         <div className={styles.body}>
-          {teamMembers.slice(0, 4).map((member, index) => (
+          {StudentCouncil.map((member, index) => (
             <div
               key={index}
               className={styles.profileContainer}
@@ -48,7 +54,7 @@ const OurTeam = () => {
 
       <div className={styles.container}>
         <div className={styles.body}>
-          {teamMembers.slice(4, 6).map((member, index) => (
+          {teamMembers2.map((member, index) => (
             <div
               key={index + 4}
               className={styles.profileContainer}
@@ -75,7 +81,7 @@ const OurTeam = () => {
       <div className={styles.container}>
         <div className={styles.head}><p>Web Team</p></div>
         <div className={styles.body}>
-          {teamMembers.slice(0, 4).map((member, index) => (
+          {WebTeam.map((member, index) => (
             <div
               key={index}
               className={styles.profileContainer}
