@@ -266,3 +266,18 @@
         font-size: 0.9em;
     }
 }
+.quoteSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    width: 80vw;
+    color: white;
+    text-align: center;
+    background: rgba(141, 140, 140, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 20px;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 1.5em;
+}

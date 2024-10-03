@@ -13,7 +13,6 @@ const OurTeam = () => {
     { name: 'Dr. Vadivukkarasan M', designation: 'Assistant Professor', imgSrc: './Vadivukkarasan.jpg' },
   ];
   const WebTeam = [
-    { name: 'Adhish JS', designation: 'Web Developer', imgSrc: './ajsWd.jpg' },
     { name: 'Bhuvanesh', designation: 'Web Designer', imgSrc: './bWd.jpg' },
     { name: 'Karthigeyan S', designation: 'Web Designer', imgSrc: './kWd.jpg' },
   ];

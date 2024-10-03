@@ -9,6 +9,7 @@ import OurTeam from './components/OurTeam/OurTeam';
 import Event from './components/Events/Events';
 import Loading from './components/Loading/Loading'; 
 import './App.css';
+import AdminLogin from './components/AdminLogin/AdminLogin';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/events" element={<Event />} />
+        <Route path="/admin" element={<AdminLogin />} />
       </Routes>
       <Footer />
     </div>

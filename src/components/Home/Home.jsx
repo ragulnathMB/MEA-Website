@@ -1,7 +1,8 @@
 import React from 'react';
 import CountUp from 'react-countup';  // Import CountUp component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  // Import FontAwesomeIcon component
-import { faBullhorn } from '@fortawesome/free-solid-svg-icons'; 
+import { faBullhorn } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons'; 
 import styles from './Home.module.css'; // Import the CSS module
 
 const Home = () => {
@@ -65,6 +66,12 @@ const Home = () => {
                     <CountUp end={2021} duration={3} className={styles.num}/>
                     <h2>Founded Year</h2>
                 </div>
+            </div>
+            <div className={styles.quoteSection}>
+                
+                    <p className={styles.quoteText}><FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIcon} /> Mechanical engineering is the backbone of innovation. It's where creativity meets precision, and where the dreams of tomorrow are built with the tools of today. Every bolt, every gear, every mechanism is a testament to the power of human ingenuity. <FontAwesomeIcon icon={faQuoteRight} className={styles.quoteIcon} />
+                    </p>
+                
             </div>
         </div>
     );

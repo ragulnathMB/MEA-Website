@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faMapMarkerAlt,faUserShield } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
@@ -15,6 +15,7 @@ const Footer = () => {
           <h3>Social Media<div className={styles.underline}><span></span></div></h3>
           <p><a href="https://www.linkedin.com/company/meanitpy/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></p>
           <p><a href="https://www.instagram.com/meanitpy/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /> Instagram</a></p>
+          <p><a href="/admin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faUserShield} /> Admin</a></p>
         </div>
         <div className={styles.col}>
           <h3>Contact Us <div className={styles.underline}><span></span></div></h3>
